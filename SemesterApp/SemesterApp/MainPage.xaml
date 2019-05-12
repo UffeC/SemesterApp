@@ -65,7 +65,8 @@
                HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
                Padding="0" BackgroundColor="White" TranslationY="40">
             <local:RoundedEntry Placeholder="Indtast dit brugernavn" PlaceholderColor="#A8A8A8" 
-                                Margin="20,0,0,0" TranslationY="2"/>
+                                Margin="20,0,0,0" TranslationY="2" 
+                x:Name="LoginEntry"/>
         </Frame>
 
         <Button TextColor="White" Text="Log Ind" 

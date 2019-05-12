@@ -6,6 +6,7 @@ FFImageLoading.Svg.Forms
 FFImageLoading.Svg.Platform
 FormsViewGroup
 MediaManager
+Newtonsoft.Json
 Plugin.InputKit
 SemesterApp
 SkiaSharp

@@ -115,6 +115,7 @@ class MonoPackageManager_Resources {
 		"FFImageLoading.Svg.Platform.dll",
 		"FormsViewGroup.dll",
 		"MediaManager.dll",
+		"Newtonsoft.Json.dll",
 		"Plugin.InputKit.dll",
 		"SemesterApp.dll",
 		"SkiaSharp.dll",
