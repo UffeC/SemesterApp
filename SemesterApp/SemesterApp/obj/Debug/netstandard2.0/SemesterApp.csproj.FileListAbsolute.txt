@@ -92,3 +92,10 @@ C:\Users\uffec\vs\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\S
 C:\Users\uffec\vs\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.dll
 C:\Users\uffec\vs\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.pdb
 C:\Users\uffec\vs\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\jonat\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\miscellaneous.xaml.g.cs
+C:\Users\jonat\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\DiaryInfo.xaml.g.cs
+C:\Users\jonat\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\Excercise.xaml.g.cs
+C:\Users\jonat\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\ProgramDesc.xaml.g.cs
+C:\Users\jonat\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Survey.xaml.g.cs
+C:\Users\jonat\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog.xaml.g.cs
+C:\Users\jonat\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Vejledning.xaml.g.cs

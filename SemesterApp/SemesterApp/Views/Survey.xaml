@@ -184,35 +184,47 @@
                     </Frame>
                     <Frame Style="{StaticResource SurveyFrame_2}">
                         <StackLayout>
-                            <Label Text="Hvilken form for smertestillende har du taget og antal over den sidste uge?"
-                                   Style="{StaticResource heading}"/>
-                            <Label Text="Pamol/Panodil, 500 mg" Style="{StaticResource TextStyle}"/>
-                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
-                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
-                                    Padding="0" BackgroundColor="White" TranslationY="40">
-                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
-                                     Margin="20,0,0,0" TranslationY="2"/>
-                            </Frame>
-                            <Label Text="Pamol/Panodil, 500 mg" Style="{StaticResource TextStyle}"/>
-                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
-                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
-                                    Padding="0" BackgroundColor="White" TranslationY="40">
-                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
-                                     Margin="20,0,0,0" TranslationY="2"/>
-                            </Frame>
-                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
-                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
-                                    Padding="0" BackgroundColor="White" TranslationY="40">
-                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
-                                     Margin="20,0,0,0" TranslationY="2"/>
-                            </Frame>
-                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
-                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
-                                    Padding="0" BackgroundColor="White" TranslationY="40">
-                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
-                                     Margin="20,0,0,0" TranslationY="2"/>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
 
-                            </Frame>
+                                <Label Grid.Row="0"
+                                   Text="Har du over den sidste uge modtaget én af følgende behandlinger ud over det du modtager som en del af projektet?"
+                                   Style="{StaticResource heading}"/>
+
+                                <Label Grid.Row="1"  Margin="20,0,0,0" Text="Pamol/Panodil 500 mg"/>
+                                <Frame Grid.Row="2" HeightRequest="50" WidthRequest="300" CornerRadius="20"
+                                       HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                       Padding="0" BackgroundColor="White" TranslationY="40">
+                                    <local:RoundedEntry Placeholder="Indtast dit brugernavn" PlaceholderColor="#A8A8A8" 
+                                Margin="20,0,0,0" TranslationY="2"/>
+                                </Frame>
+                                <Label Grid.Row="5"  Margin="20,0,0,0" Text="Ipren/Ibumetin, 200 mg"/>
+                                <Frame Grid.Row="6" HeightRequest="50" WidthRequest="300" CornerRadius="20"
+                                       HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                       Padding="0" BackgroundColor="White" TranslationY="40">
+                                    <local:RoundedEntry Placeholder="Indtast dit brugernavn" PlaceholderColor="#A8A8A8" 
+                                    Margin="20,0,0,0" TranslationY="2"/>
+                                </Frame>
+                                <Label Grid.Row="7"  Margin="20,0,0,0" Text="Ipren/Ibumetin, 200 mg"/>
+                                <Frame Grid.Row="8" HeightRequest="50" WidthRequest="300" CornerRadius="20"
+                                       HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                       Padding="0" BackgroundColor="White" TranslationY="40">
+                                    <local:RoundedEntry Placeholder="Indtast dit brugernavn" PlaceholderColor="#A8A8A8" 
+                                    Margin="20,0,0,0" TranslationY="2"/>
+                                </Frame>
+                            </Grid>
                         </StackLayout>
                     </Frame>
                     <Label Text="Sygefravær pga. skulderen"
