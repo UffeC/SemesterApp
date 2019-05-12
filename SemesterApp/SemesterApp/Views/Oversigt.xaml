@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             x:Class="SemesterApp.Views.Oversigt"
+             Title="Oversigt">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <BoxView BackgroundColor="#558B2F" Grid.Row="0"/>
+            <BoxView BackgroundColor="#F6F4F7" Grid.Row="1"/>
+            <StackLayout  BindingContext="{x:Static system:DateTime.Now}" Grid.Row="0" Padding="0,54,0,0">
+                <Label Text="Oversigt" Style="{StaticResource HeaderStyle}"/>
+                <Label Text="8. maj 2019" 
+                       Margin="5"
+                       HorizontalTextAlignment="Center"
+                       FontSize="30"
+                       TextColor="White"
+                       />
+                <Label Text="Trænings program udført" 
+                       Margin="5"
+                       HorizontalTextAlignment="Center"
+                       FontSize="25"
+                       TextColor="White"
+                       />
+                <Image Source="HeaderBottom22" VerticalOptions="End" Aspect="AspectFill" TranslationY="1"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <Frame Style="{StaticResource OverviewFrame}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Style="{StaticResource heading}" Text="Fremskridt"  Grid.Column="0"></Label>
+                        <Label Style="{StaticResource heading}" Text="Uge 1 ud af 12"  Grid.Column="2"></Label>
+                        <ProgressBar x:Name="WeeklyProgress" Margin="5" 
+                                     Grid.Row="1" 
+                                     Grid.Column="1"
+                                     Scale="5" 
+                                     ProgressColor="Green"
+                                     Progress="0.9"
+                                     HorizontalOptions="Center"
+                                     />
+                    </Grid>
+                </Frame>
+                <Frame Style="{StaticResource OverviewFrame}">
+                    <Grid Padding="0,0,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="1" Grid.Row="0" FontAttributes="Bold" FontSize="18" TextColor="black" Text="Hjælp og vejledning"/>
+                        <Label Grid.Column="1" Grid.Row="1" Style="{StaticResource TextStyle}" Text="Få vejledning til udfyldelse af træningsprogrammet"/>
+                            
+                        </Grid>
+                </Frame>
+                <Frame Style="{StaticResource OverviewFrame}">
+                    <Grid Padding="0,0,0,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="1" Grid.Row="0" FontAttributes="Bold" FontSize="18" TextColor="black" Text="Træningsdagbog"/>
+                        <Label Grid.Column="1" Grid.Row="1" Style="{StaticResource TextStyle}" Text="Er udfyldt"/>
+                    </Grid>
+                </Frame>
+                    <Frame Style="{StaticResource OverviewFrame}">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                        </Frame.GestureRecognizers>
+                        <Grid Padding="0,0,0,10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="1" Grid.Row="0" FontAttributes="Bold" FontSize="18" TextColor="black" Text="Ugentligt spørgeskema"/>
+                            <Label Grid.Column="1" Grid.Row="1" Style="{StaticResource TextStyle}" Text="Er udfyldt"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

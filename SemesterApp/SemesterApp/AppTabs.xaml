@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="SemesterApp.AppTabs" 
+             BarBackgroundColor="#f6f4f7"
+             BarTextColor="#a8a8a8"
+             BackgroundColor="LightGray"
+            NavigationPage.HasNavigationBar="False"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+             >
+  <!--Pages can be added as references or inline-->
+</TabbedPage>

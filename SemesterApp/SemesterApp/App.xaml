@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SemesterApp.App"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global style-->
+            <Style x:Key="heading" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="17"/>
+                
+            </Style>
+
+            <!--¨Style for the header-->
+            <Style x:Key="HeaderStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="40"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="XAlign" Value="Center"/>
+                <Setter Property="YAlign" Value="Center"/>
+            </Style>
+            <!--Style for the text-->
+            <Style x:Key="TextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#A8A8A8"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="FontAttributes" Value="None" />
+                
+            </Style>
+            <!--Overview Frame-->
+            <!--style for the frames in the Overview page-->
+            <Style x:Key="OverviewFrame" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="100"/>
+                <Setter Property="WidthRequest" Value="300" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <!--style for the frames in the oversigt page-->
+            <Style x:Key="OversigtFrame" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="50"/>
+                <Setter Property="WidthRequest" Value="300" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="PickerStyle" TargetType="Picker">
+                <Setter Property="HeightRequest" Value="20"/>
+                <Setter Property="WidthRequest" Value="300" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <!--excercise label-->
+            <Style x:Key="Excercise" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="XAlign" Value="Start"/>
+                <Setter Property="YAlign" Value="Start"/>
+            </Style>
+            
+           <!--Login screen-->
+                <Style x:Key="LoginStyle" TargetType="Label">
+                    <Setter Property="TextColor" Value="#558B2F"/>
+                    <Setter Property="FontSize" Value="36"/>
+                    <Setter Property="FontAttributes" Value="Bold" />
+                </Style>
+                <Style x:Key="LoginTextStyle" TargetType="Label">
+                    <Setter Property="TextColor" Value="#A8A8A8"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="None" />
+                </Style>
+            <Style x:Key="LoginWhiteHeader" TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <!--Diary style-->
+            <Style x:Key="DiaryFrame" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="100"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="DiaryFrame2" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="300"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <!--Dagbogs frame-->
+            <Style x:Key="SurveyFrame" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="200"/>
+                    <Setter Property="WidthRequest" Value="300"/>
+                    <Setter Property="CornerRadius" Value="20" />
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                    <Setter Property="VerticalOptions" Value="Center"/>
+                    <Setter Property="Margin" Value="10"/>
+                    <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="SurveyFrame_2" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="700"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="SurveyFrame_3" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="250"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="SurveyFrame_4" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="600"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <!--Vejledning-->
+            <Style x:Key="VejledningsFrame" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="65"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="20"/>
+                <Setter Property="Padding" Value="20"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="ProgramFrame" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="200"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="DiaryInfoFrame" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="250"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="DiaryInfoFrame_2" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="80"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

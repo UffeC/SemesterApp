@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SemesterApp"
+             x:Class="SemesterApp.Views.Survey">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <BoxView BackgroundColor="#558B2F" Grid.Row="0"/>
+            <BoxView BackgroundColor="#F6F4F7" Grid.Row="1"/>
+            <StackLayout Grid.Row="0" Padding="0,61,0,0">
+                <Label Text="Spørgeskema" Style="{StaticResource HeaderStyle}"/>
+                <Image Source="HeaderBottom22" VerticalOptions="End" Aspect="AspectFill" TranslationY="1"/>
+            </StackLayout>
+            <ScrollView  Grid.Row="1">
+                <StackLayout>
+                    <Label Text="Uge"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Margin="30"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       >
+                    </Label>
+                    <Frame Style="{StaticResource SurveyFrame}">
+                        <Label Margin="50" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam,  quis nostrud  exercitation ullamco laboris nisi ut aliquip ex  ea commodo consequat. Duis aute irure">
+                        </Label>
+                    </Frame>
+                    <Label VerticalTextAlignment="Center" 
+                           HorizontalTextAlignment="Center" 
+                           FontSize="25"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           Margin="30"
+                           Text="Generel skuldersmerter">
+                    </Label>
+                    <Frame Style="{StaticResource SurveyFrame}">
+                        <Label Margin="50" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam,  quis nostrud  exercitation ullamco laboris nisi ut aliquip ex  ea commodo consequat. Duis aute irure">
+                            
+                        </Label>
+                    </Frame>
+                    <Frame Style="{StaticResource SurveyFrame}">
+                        <Label Margin="50" Text="Beskriv skulder smerte">
+
+                        </Label>
+                    </Frame>
+                    <Frame Style="{StaticResource SurveyFrame}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label
+                                   Grid.Row="0"
+                                   Text="Laveste skuldersmmerte du har haft over samlet set over den sidste uge"
+                                   Style="{StaticResource heading}"/>
+                            <Slider Grid.Row="1"
+                                    Maximum="10"
+                                    Minimum="0"
+                                    MaximumTrackColor="Gray"
+                                    MinimumTrackColor="green"
+                                    />
+                            <Label Grid.Row="2" HorizontalTextAlignment="Start" Text="Ingen smerter" Style="{StaticResource TextStyle}"/>
+                            <Label Grid.Row="2" HorizontalTextAlignment="End" Text="Værst tænkelig smerter" Style="{StaticResource TextStyle}"/>
+                        </Grid>
+                    </Frame>
+                    <Frame Style="{StaticResource SurveyFrame}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label
+                                   Grid.Row="0"
+                                   Text="Højeste skuldersmmerte du har haft over samlet set over den sidste uge"
+                                   Style="{StaticResource heading}"/>
+                            <Slider Grid.Row="1"
+                                    Maximum="10"
+                                    Minimum="0"
+                                    MaximumTrackColor="Gray"
+                                    MinimumTrackColor="green"
+                                    />
+                            <Label Grid.Row="2" HorizontalTextAlignment="Start" Text="Ingen smerter" Style="{StaticResource TextStyle}"/>
+                            <Label Grid.Row="2" HorizontalTextAlignment="End" Text="Værst tænkelig smerter" Style="{StaticResource TextStyle}"/>
+                        </Grid>
+                    </Frame>
+                    <Frame Style="{StaticResource SurveyFrame}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label
+                                   Grid.Row="0"
+                                   Text="Gennemsnitlige skuldersmmerte du har haft over samlet set over den sidste uge"
+                                   Style="{StaticResource heading}"/>
+                            <Slider Grid.Row="1"
+                                    Maximum="10"
+                                    Minimum="0"
+                                    MaximumTrackColor="Gray"
+                                    MinimumTrackColor="green"
+                                    />
+                            <Label Grid.Row="2" HorizontalTextAlignment="Start" Text="Ingen smerter" Style="{StaticResource TextStyle}"/>
+                            <Label Grid.Row="2" HorizontalTextAlignment="End" Text="Værst tænkelig smerter" Style="{StaticResource TextStyle}"/>
+                        </Grid>
+                    </Frame>
+                    <Label Text="Smertestillende"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Margin="30"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       />
+                    <Frame Style="{StaticResource SurveyFrame}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0"
+                                   Grid.Row="0"
+                                   Text="Har du over den sdiste uge taget smertestillende pga. din skulder?"
+                                   Style="{StaticResource heading}"/>
+
+                            <Button BorderColor="black" Grid.Row="1" Text="Nej" Margin="10,10,20,10" TextColor="Black"  HorizontalOptions="Start" VerticalOptions="Start"  BackgroundColor="#f6f4f7">
+                                <Button.WidthRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                </Button.WidthRequest>
+                                <Button.HeightRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                </Button.HeightRequest>
+                                <Button.BorderRadius>
+                                    <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                </Button.BorderRadius>
+                            </Button>
+                            <Button Grid.Row="1" Text="Ja" Margin="10,10,20,10" TextColor="White" HorizontalOptions="End" VerticalOptions="End" BackgroundColor="Green">
+                                <Button.WidthRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                </Button.WidthRequest>
+                                <Button.HeightRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                </Button.HeightRequest>
+                                <Button.BorderRadius>
+                                    <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                </Button.BorderRadius>
+                            </Button>
+                        </Grid>
+                    </Frame>
+                    <Frame Style="{StaticResource SurveyFrame}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label
+                                   Grid.Row="0"
+                                   Text="Hvor mange dage har du samlet set over den sidste uge haft smerte?"
+                                   Style="{StaticResource heading}"/>
+                            <Slider x:Name="slider" Grid.Row="2"
+                                    Maximum="7"
+                                    Minimum="0"
+                                    Scale="1.1"
+                                    ThumbColor="#558b2f"
+                                    MaximumTrackColor="Gray"
+                                    MinimumTrackColor="green"
+                                    />
+                            <Label Grid.Row="1" HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center" 
+                                   FontSize="20"
+                                   Text="{Binding Source={x:Reference slider},
+                                Path=Value,
+                                StringFormat=' {0:F0}'}"/>
+                        </Grid>
+                    </Frame>
+                    <Frame Style="{StaticResource SurveyFrame_2}">
+                        <StackLayout>
+                            <Label Text="Hvilken form for smertestillende har du taget og antal over den sidste uge?"
+                                   Style="{StaticResource heading}"/>
+                            <Label Text="Pamol/Panodil, 500 mg" Style="{StaticResource TextStyle}"/>
+                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
+                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                    Padding="0" BackgroundColor="White" TranslationY="40">
+                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
+                                     Margin="20,0,0,0" TranslationY="2"/>
+                            </Frame>
+                            <Label Text="Pamol/Panodil, 500 mg" Style="{StaticResource TextStyle}"/>
+                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
+                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                    Padding="0" BackgroundColor="White" TranslationY="40">
+                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
+                                     Margin="20,0,0,0" TranslationY="2"/>
+                            </Frame>
+                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
+                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                    Padding="0" BackgroundColor="White" TranslationY="40">
+                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
+                                     Margin="20,0,0,0" TranslationY="2"/>
+                            </Frame>
+                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
+                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                    Padding="0" BackgroundColor="White" TranslationY="40">
+                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
+                                     Margin="20,0,0,0" TranslationY="2"/>
+
+                            </Frame>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Sygefravær pga. skulderen"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Margin="30"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       />
+                    <Frame Style="{StaticResource SurveyFrame_3}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0"
+                                   Grid.Row="0"
+                                   Text="Har du over den sdiste uge haft nogle sygedage pga. din skulder?"
+                                   Style="{StaticResource heading}"/>
+                            <Button Grid.Row="1" Text="Nej" Margin="10,10,20,10" TextColor="Black"  HorizontalOptions="Start" VerticalOptions="Start"  BackgroundColor="#f6f4f7">
+                                <Button.WidthRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                </Button.WidthRequest>
+                                <Button.HeightRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                </Button.HeightRequest>
+                                <Button.BorderRadius>
+                                    <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                </Button.BorderRadius>
+                            </Button>
+                            <Button Grid.Row="1" Text="Ja" Margin="10,10,20,10" TextColor="White" HorizontalOptions="End" VerticalOptions="End" BackgroundColor="Green">
+                                <Button.WidthRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                </Button.WidthRequest>
+                                <Button.HeightRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                </Button.HeightRequest>
+                                <Button.BorderRadius>
+                                    <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                </Button.BorderRadius>
+                            </Button>
+                            <Slider x:Name="slider_2" Grid.Row="3"
+                                    Maximum="7"
+                                    Minimum="0"
+                                    Scale="1.1"
+                                    ThumbColor="#558b2f"
+                                    MaximumTrackColor="Gray"
+                                    MinimumTrackColor="green"
+                                    />
+                            <Label Grid.Row="2" HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center" 
+                                   FontSize="20"
+                                   Text="{Binding Source={x:Reference slider_2},
+                                Path=Value,
+                                StringFormat=' {0:F0}'}"/>
+                        </Grid>
+                    </Frame>
+                    <Label Text="Supplerende behandling"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Margin="30"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       />
+                    <Frame Style="{StaticResource OversigtFrame}">
+                        <Label Text="Supplerende behandling udover den du modtager som del af projektet" Style="{StaticResource heading}"/>
+                    </Frame>
+                    <Frame Style="{StaticResource SurveyFrame}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0"
+                                   Grid.Row="0"
+                                   Text="Har du over den sidste uge opsøgt læge pga. din skulder?"
+                                   Style="{StaticResource heading}"/>
+                            <Button Grid.Row="1" Text="Nej" Margin="10,10,20,10" TextColor="Black"  HorizontalOptions="Start" VerticalOptions="Start"  BackgroundColor="#f6f4f7">
+                                <Button.WidthRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                </Button.WidthRequest>
+                                <Button.HeightRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                </Button.HeightRequest>
+                                <Button.BorderRadius>
+                                    <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                </Button.BorderRadius>
+                            </Button>
+                            <Button Grid.Row="1" Text="Ja" Margin="10,10,20,10" TextColor="White" HorizontalOptions="End" VerticalOptions="End" BackgroundColor="Green">
+                                <Button.WidthRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                </Button.WidthRequest>
+                                <Button.HeightRequest>
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                </Button.HeightRequest>
+                                <Button.BorderRadius>
+                                    <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                </Button.BorderRadius>
+                            </Button>
+                        </Grid>
+                    </Frame>
+                    <Frame Style="{StaticResource SurveyFrame_4}">
+                        <StackLayout>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Grid.Row="0"
+                                   Text="Har du over den sidste uge modtaget én af følgende behandlinger ud over det du modtager som en del af projektet?"
+                                   Style="{StaticResource heading}"/>
+                                
+                                <Label Grid.Row="1"  Margin="20,0,0,0" Text="Fysioterapi"/>
+                                <Button Grid.Row="2" Text="Nej" Margin="10,10,10,10" TextColor="Black"  HorizontalOptions="Start" VerticalOptions="Start"  BackgroundColor="#f6f4f7">
+                                    <Button.WidthRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                    </Button.WidthRequest>
+                                    <Button.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                    </Button.HeightRequest>
+                                    <Button.BorderRadius>
+                                        <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                    </Button.BorderRadius>
+                                </Button>
+                                <Button Grid.Row="2" Text="Ja" Margin="0,0,0,5" TextColor="White" HorizontalOptions="End" VerticalOptions="End" BackgroundColor="Green">
+                                    <Button.WidthRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                    </Button.WidthRequest>
+                                    <Button.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                    </Button.HeightRequest>
+                                    <Button.BorderRadius>
+                                        <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                    </Button.BorderRadius>
+                                </Button>
+                                <Label Grid.Row="3"  Margin="20,0,0,0" Text="Massage"/>
+                                <Button Grid.Row="4" Text="Nej" Margin="10,10,20,10" TextColor="Black"  HorizontalOptions="Start" VerticalOptions="Start"  BackgroundColor="#f6f4f7">
+                                    <Button.WidthRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                    </Button.WidthRequest>
+                                    <Button.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                    </Button.HeightRequest>
+                                    <Button.BorderRadius>
+                                        <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                    </Button.BorderRadius>
+                                </Button>
+                                <Button Grid.Row="4" Text="Ja" Margin="0,0,0,5" TextColor="White" HorizontalOptions="End" VerticalOptions="End" BackgroundColor="Green">
+                                    <Button.WidthRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                    </Button.WidthRequest>
+                                    <Button.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                    </Button.HeightRequest>
+                                    <Button.BorderRadius>
+                                        <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                    </Button.BorderRadius>
+                                </Button>
+                                <Label Grid.Row="5"  Margin="20,0,0,0" Text="Akupunktur"/>
+                                <Button Grid.Row="6" Text="Nej" Margin="10,10,20,10" TextColor="Black"  HorizontalOptions="Start" VerticalOptions="Start"  BackgroundColor="#f6f4f7">
+                                    <Button.WidthRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                    </Button.WidthRequest>
+                                    <Button.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                    </Button.HeightRequest>
+                                    <Button.BorderRadius>
+                                        <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                    </Button.BorderRadius>
+                                </Button>
+                                <Button Grid.Row="6" Text="Ja" Margin="0,0,0,5" TextColor="White" HorizontalOptions="End" VerticalOptions="End" BackgroundColor="Green">
+                                    <Button.WidthRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                    </Button.WidthRequest>
+                                    <Button.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                    </Button.HeightRequest>
+                                    <Button.BorderRadius>
+                                        <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                    </Button.BorderRadius>
+                                </Button>
+                                <Label Grid.Row="7"  Margin="20,0,0,0" Text="Akupunktur"/>
+                                <Button Grid.Row="8" Text="Nej" Margin="10,10,20,10" TextColor="Black"  HorizontalOptions="Start" VerticalOptions="Start"  BackgroundColor="#f6f4f7">
+                                    <Button.WidthRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                    </Button.WidthRequest>
+                                    <Button.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                    </Button.HeightRequest>
+                                    <Button.BorderRadius>
+                                        <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                    </Button.BorderRadius>
+                                </Button>
+                                <Button Grid.Row="8" Text="Ja" Margin="0,0,0,5" TextColor="White" HorizontalOptions="End" VerticalOptions="End" BackgroundColor="Green">
+                                    <Button.WidthRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                                    </Button.WidthRequest>
+                                    <Button.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                    </Button.HeightRequest>
+                                    <Button.BorderRadius>
+                                        <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                    </Button.BorderRadius>
+                                </Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Style="{StaticResource SurveyFrame}">
+
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

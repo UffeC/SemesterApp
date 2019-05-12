@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SemesterApp.Views.Subviews.Excercise">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <BoxView BackgroundColor="#558B2F" Grid.Row="0"/>
+            <BoxView BackgroundColor="#F6F4F7" Grid.Row="1"/>
+            <StackLayout Grid.Row="0" Padding="0,61,0,0">
+                <Label Text="Vejledning" Style="{StaticResource HeaderStyle}"/>
+                <Image Source="HeaderBottom22" VerticalOptions="End" Aspect="AspectFill" TranslationY="1"/>
+            </StackLayout>
+            <ScrollView Grid.Row="1">
+            <StackLayout>
+                <Label Text="Øvelser" 
+                       FontSize="30" 
+                       TextColor="Black" 
+                       VerticalTextAlignment="Center" 
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold"
+                       Margin="20"
+                       />
+                    <Frame Style="{StaticResource OversigtFrame}">
+                        <StackLayout>
+                            <Picker 
+                            x:Name="ExcercisePicker"
+                            Title="Øvelse"
+                                >
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Øvelse 1</x:String>
+                                        <x:String>Øvelse 2</x:String>
+                                        <x:String>Øvelse 3</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Name of excercise" 
+                                    FontSize="30" 
+                                    TextColor="Black" 
+                                    VerticalTextAlignment="Center" 
+                                    HorizontalTextAlignment="Center"
+                                    FontAttributes="Bold"
+                                    Margin="20"
+                       />
+                    <Image Source="pushUp.jpg"/>
+                    <Frame Style="{StaticResource OversigtFrame}">
+                        <Label Text="Udføres uge 1-4"
+                               VerticalTextAlignment="Center"
+                               Style="{StaticResource heading}"
+                               />
+                    </Frame>
+                    <Frame Style="{StaticResource DiaryInfoFrame}">
+                        <StackLayout>
+                        <Label Text="Udførelse"
+                               Style="{StaticResource heading}"
+                               />
+                            <Label Text="Insert content"
+                                   Style="{StaticResource TextStyle}"
+                                   />
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="Næste øvelse" Margin="10,10,40,10" TextColor="White" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Green">
+                        <Button.WidthRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="130" />
+                        </Button.WidthRequest>
+                        <Button.HeightRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                        </Button.HeightRequest>
+                        <Button.BorderRadius>
+                            <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                        </Button.BorderRadius>
+                    </Button>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

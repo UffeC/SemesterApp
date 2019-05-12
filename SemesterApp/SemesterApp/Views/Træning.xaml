@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SemesterApp.Views.Træning"
+             BackgroundColor="#F6F4F7"
+             Title="Træning"
+             Icon="guide.png">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <BoxView BackgroundColor="#558B2F" Grid.Row="0"/>
+            <BoxView BackgroundColor="#F6F4F7" Grid.Row="1"/>
+            <StackLayout Grid.Row="0" Padding="0,61,0,0">
+                <Label Text="Træning" Style="{StaticResource HeaderStyle}"/>
+                <Image Source="HeaderBottom22" VerticalOptions="End" Aspect="AspectFill" TranslationY="1"/>
+            </StackLayout>
+            <StackLayout Margin="0, 80,0,0" Grid.Row="1">
+                <Frame Style="{StaticResource OversigtFrame}">
+                    <StackLayout>
+                        <Picker 
+                            x:Name="WeekPicker"
+                            Title="Uge">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Uge 1</x:String>
+                                    <x:String>Uge 2</x:String>
+                                    <x:String>Uge 3</x:String>
+                                    <x:String>Uge 4</x:String>
+                                    <x:String>Uge 5</x:String>
+                                    <x:String>Uge 6</x:String>
+                                    <x:String>Uge 7</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+                </Frame>
+                <Frame Style="{StaticResource OversigtFrame}">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout>
+                        <Label Text="træning 1" FontAttributes="Bold" Style="{StaticResource Excercise}"></Label>
+                        <Label Text="Dagbog udfyldt" Style="{StaticResource Excercise}"></Label>
+                    </StackLayout>
+                </Frame>
+                <Frame Style="{StaticResource OversigtFrame}">
+                    <StackLayout>
+                        <Label Text="træning 2" FontAttributes="Bold" Style="{StaticResource Excercise}"></Label>
+                        <Label Text="Udfyld først træning 1" Style="{StaticResource Excercise}"></Label>
+                    </StackLayout>
+                </Frame>
+                <Frame Style="{StaticResource OversigtFrame}">
+                    <StackLayout>
+                        <Label Text="træning 3" FontAttributes="Bold" Style="{StaticResource Excercise}"></Label>
+                        <Label Text="Udfyld først træning 2" Style="{StaticResource Excercise}"></Label>
+                    </StackLayout>
+                </Frame>
+                <Frame Style="{StaticResource OversigtFrame}">
+                    <StackLayout>
+                        <Label Text="Spørgeskema" FontAttributes="Bold" Style="{StaticResource Excercise}"></Label>
+                        <Label Text="Kan udfyldes fra d. 19. maj" Style="{StaticResource Excercise}"></Label>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
