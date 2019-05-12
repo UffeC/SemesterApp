@@ -30,6 +30,6 @@ namespace SemesterApp.Views
         private void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
         {
             Navigation.PushModalAsync(new DiaryInfo());
-        }
+        } /* test */
     }
 }

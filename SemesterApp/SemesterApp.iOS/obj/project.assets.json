@@ -1490,20 +1490,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\uffec\\.nuget\\packages\\": {}
+    "C:\\Users\\jonat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\SemesterApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\jonat\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\SemesterApp.iOS.csproj",
       "projectName": "SemesterApp.iOS",
-      "projectPath": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\SemesterApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\uffec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\jonat\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\SemesterApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jonat\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\uffec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1516,8 +1516,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj": {
-              "projectPath": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj"
+            "C:\\Users\\jonat\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj": {
+              "projectPath": "C:\\Users\\jonat\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj"
             }
           }
         }

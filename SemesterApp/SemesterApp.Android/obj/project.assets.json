@@ -1222,20 +1222,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\uffec\\.nuget\\packages\\": {}
+    "C:\\Users\\jonat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp.Android\\SemesterApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\jonat\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp.Android\\SemesterApp.Android.csproj",
       "projectName": "SemesterApp.Android",
-      "projectPath": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp.Android\\SemesterApp.Android.csproj",
-      "packagesPath": "C:\\Users\\uffec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp.Android\\obj\\",
+      "projectPath": "C:\\Users\\jonat\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp.Android\\SemesterApp.Android.csproj",
+      "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jonat\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\uffec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1248,8 +1248,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj": {
-              "projectPath": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj"
+            "C:\\Users\\jonat\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj": {
+              "projectPath": "C:\\Users\\jonat\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj"
             }
           }
         }
