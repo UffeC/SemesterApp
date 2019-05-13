@@ -144,6 +144,16 @@
                 <Setter Property="Padding" Value="10"/>
                 <Setter Property="BackgroundColor" Value="White"/>
             </Style>
+            <Style x:Key="SurveyFrame_5" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="150"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
             <!--Vejledning-->
             <Style x:Key="VejledningsFrame" TargetType="Frame">
                 <Setter Property="HeightRequest" Value="65"/>
