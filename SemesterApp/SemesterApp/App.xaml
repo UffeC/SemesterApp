@@ -11,7 +11,7 @@
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="FontSize" Value="17"/>
-                
+
             </Style>
 
             <!--¨Style for the header-->
@@ -27,7 +27,7 @@
                 <Setter Property="TextColor" Value="#A8A8A8"/>
                 <Setter Property="FontSize" Value="14"/>
                 <Setter Property="FontAttributes" Value="None" />
-                
+
             </Style>
             <!--Overview Frame-->
             <!--style for the frames in the Overview page-->
@@ -65,18 +65,18 @@
                 <Setter Property="XAlign" Value="Start"/>
                 <Setter Property="YAlign" Value="Start"/>
             </Style>
-            
-           <!--Login screen-->
-                <Style x:Key="LoginStyle" TargetType="Label">
-                    <Setter Property="TextColor" Value="#558B2F"/>
-                    <Setter Property="FontSize" Value="36"/>
-                    <Setter Property="FontAttributes" Value="Bold" />
-                </Style>
-                <Style x:Key="LoginTextStyle" TargetType="Label">
-                    <Setter Property="TextColor" Value="#A8A8A8"/>
-                    <Setter Property="FontSize" Value="15"/>
-                    <Setter Property="FontAttributes" Value="None" />
-                </Style>
+
+            <!--Login screen-->
+            <Style x:Key="LoginStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#558B2F"/>
+                <Setter Property="FontSize" Value="36"/>
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <Style x:Key="LoginTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#A8A8A8"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontAttributes" Value="None" />
+            </Style>
             <Style x:Key="LoginWhiteHeader" TargetType="Label">
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="FontSize" Value="17"/>
@@ -106,12 +106,12 @@
             <!--Dagbogs frame-->
             <Style x:Key="SurveyFrame" TargetType="Frame">
                 <Setter Property="HeightRequest" Value="200"/>
-                    <Setter Property="WidthRequest" Value="300"/>
-                    <Setter Property="CornerRadius" Value="20" />
-                    <Setter Property="HorizontalOptions" Value="Center" />
-                    <Setter Property="VerticalOptions" Value="Center"/>
-                    <Setter Property="Margin" Value="10"/>
-                    <Setter Property="Padding" Value="10"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
                 <Setter Property="BackgroundColor" Value="White"/>
             </Style>
             <Style x:Key="SurveyFrame_2" TargetType="Frame">
@@ -136,6 +136,16 @@
             </Style>
             <Style x:Key="SurveyFrame_4" TargetType="Frame">
                 <Setter Property="HeightRequest" Value="600"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="SurveyFrame_5" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="150"/>
                 <Setter Property="WidthRequest" Value="300"/>
                 <Setter Property="CornerRadius" Value="20" />
                 <Setter Property="HorizontalOptions" Value="Center" />
@@ -188,3 +198,4 @@
         </ResourceDictionary>
     </Application.Resources>
 </Application>
+
