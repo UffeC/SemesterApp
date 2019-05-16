@@ -1218,24 +1218,25 @@
       "Xamarin.Android.Support.v7.CardView >= 27.0.2.1",
       "Xamarin.Android.Support.v7.MediaRouter >= 27.0.2.1",
       "Xamarin.FFImageLoading.Svg.Forms >= 2.4.9.961",
-      "Xamarin.Forms >= 3.4.0.1008975"
+      "Xamarin.Forms >= 3.4.0.1008975",
+      "Xamarin.Forms.InputKit >= 3.0.11"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\uffec\\.nuget\\packages\\": {}
+    "C:\\Users\\jonat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp.Android\\SemesterApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\jonat\\Downloads\\SemesterApp (1)\\SemesterApp\\SemesterApp\\SemesterApp.Android\\SemesterApp.Android.csproj",
       "projectName": "SemesterApp.Android",
-      "projectPath": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp.Android\\SemesterApp.Android.csproj",
-      "packagesPath": "C:\\Users\\uffec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp.Android\\obj\\",
+      "projectPath": "C:\\Users\\jonat\\Downloads\\SemesterApp (1)\\SemesterApp\\SemesterApp\\SemesterApp.Android\\SemesterApp.Android.csproj",
+      "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jonat\\Downloads\\SemesterApp (1)\\SemesterApp\\SemesterApp\\SemesterApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\uffec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1248,8 +1249,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj": {
-              "projectPath": "C:\\Users\\uffec\\vs\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj"
+            "C:\\Users\\jonat\\Downloads\\SemesterApp (1)\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj": {
+              "projectPath": "C:\\Users\\jonat\\Downloads\\SemesterApp (1)\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj"
             }
           }
         }
@@ -1289,6 +1290,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[3.4.0.1008975, )"
+          },
+          "Xamarin.Forms.InputKit": {
+            "target": "Package",
+            "version": "[3.0.11, )"
           }
         }
       }

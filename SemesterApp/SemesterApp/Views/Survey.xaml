@@ -2,7 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SemesterApp"
-             x:Class="SemesterApp.Views.Survey">
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             x:Class="SemesterApp.Views.Survey"
+             NavigationPage.HasNavigationBar="False"
+                >
     <ContentPage.Content>
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
@@ -40,7 +43,7 @@
                     </Label>
                     <Frame Style="{StaticResource SurveyFrame}">
                         <Label Margin="50" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam,  quis nostrud  exercitation ullamco laboris nisi ut aliquip ex  ea commodo consequat. Duis aute irure">
-                            
+
                         </Label>
                     </Frame>
                     <Frame Style="{StaticResource SurveyFrame}">
@@ -178,41 +181,84 @@
                                    VerticalTextAlignment="Center" 
                                    FontSize="20"
                                    Text="{Binding Source={x:Reference slider},
-                                Path=Value,
-                                StringFormat=' {0:F0}'}"/>
+                                   Path=Value,
+                                   StringFormat=' {0:F0}'}"/>
                         </Grid>
                     </Frame>
                     <Frame Style="{StaticResource SurveyFrame_2}">
                         <StackLayout>
-                            <Label Text="Hvilken form for smertestillende har du taget og antal over den sidste uge?"
-                                   Style="{StaticResource heading}"/>
-                            <Label Text="Pamol/Panodil, 500 mg" Style="{StaticResource TextStyle}"/>
-                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
-                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
-                                    Padding="0" BackgroundColor="White" TranslationY="40">
-                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
-                                     Margin="20,0,0,0" TranslationY="2"/>
-                            </Frame>
-                            <Label Text="Pamol/Panodil, 500 mg" Style="{StaticResource TextStyle}"/>
-                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
-                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
-                                    Padding="0" BackgroundColor="White" TranslationY="40">
-                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
-                                     Margin="20,0,0,0" TranslationY="2"/>
-                            </Frame>
-                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
-                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
-                                    Padding="0" BackgroundColor="White" TranslationY="40">
-                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
-                                     Margin="20,0,0,0" TranslationY="2"/>
-                            </Frame>
-                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
-                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
-                                    Padding="0" BackgroundColor="White" TranslationY="40">
-                                <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
-                                     Margin="20,0,0,0" TranslationY="2"/>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="70"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
 
-                            </Frame>
+                                <Label Margin="20,0,0,0" Grid.Row="0" Text="Hvilken form for smertestillende har du taget og antal over den sidste uge?"
+                                   Style="{StaticResource heading}"/>
+
+                                <Label TranslationY="25" Margin="20,0,0,0" Grid.Row="1" Text="Pamol/Panodil, 500 mg" Style="{StaticResource TextStyle}"/>
+                                <Frame Grid.Row="2" HeightRequest="50" WidthRequest="280" CornerRadius="20"
+                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                    Padding="0" BackgroundColor="White" TranslationY="40">
+                                    <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
+                                     Margin="20,0,0,0" TranslationY="2"/>
+                                </Frame>
+                                <Label TranslationY="25" Margin="20,0,0,0" Grid.Row="5" Text="Pamol/Panodil, 500 mg" Style="{StaticResource TextStyle}"/>
+                                <Frame Grid.Row="6" HeightRequest="50" WidthRequest="280" CornerRadius="20"
+                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                    Padding="0" BackgroundColor="White" TranslationY="40">
+                                    <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
+                                     Margin="20,0,0,0" TranslationY="2"/>
+                                </Frame>
+                                <Label TranslationY="25" Margin="20,0,0,0" Grid.Row="9" Text="Pamol/Panodil, 500 mg" Style="{StaticResource TextStyle}"/>
+                                <Frame Grid.Row="10" HeightRequest="50" WidthRequest="280" CornerRadius="20"
+                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                    Padding="0" BackgroundColor="White" TranslationY="40">
+                                    <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
+                                     Margin="20,0,0,0" TranslationY="2"/>
+                                </Frame>
+                                <input:CheckBox  Margin="20,20,0,0" Grid.Row="12" Text="Andet" IsChecked="False" Type="Check"/>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Style="{StaticResource SurveyFrame}">
+                        <StackLayout>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Label Margin="20,0,0,0" Grid.Row="0" TranslationY="20" Text="Hvilken type medicin?" Style="{StaticResource heading}"/>
+                                <Frame Grid.Row="1" HeightRequest="60" WidthRequest="280" CornerRadius="20"
+                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                    Padding="0" BackgroundColor="White" TranslationY="40">
+                                    <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
+                                     Margin="20,0,0,0" TranslationY="2"/>
+                                </Frame>
+                                <Frame Grid.Row="3" HeightRequest="60" WidthRequest="280" CornerRadius="20"
+                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                    Padding="0" BackgroundColor="White" TranslationY="40">
+                                    <local:RoundedEntry Placeholder="Indtast Mængde" PlaceholderColor="#A8A8A8" 
+                                     Margin="20,0,0,0" TranslationY="2"/>
+                                </Frame>
+                            </Grid>
                         </StackLayout>
                     </Frame>
                     <Label Text="Sygefravær pga. skulderen"
@@ -230,7 +276,7 @@
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
-                                
+
                             </Grid.RowDefinitions>
                             <Label Grid.Column="0"
                                    Grid.Row="0"
@@ -340,7 +386,7 @@
                                 <Label Grid.Row="0"
                                    Text="Har du over den sidste uge modtaget én af følgende behandlinger ud over det du modtager som en del af projektet?"
                                    Style="{StaticResource heading}"/>
-                                
+
                                 <Label Grid.Row="1"  Margin="20,0,0,0" Text="Fysioterapi"/>
                                 <Button Grid.Row="2" Text="Nej" Margin="10,10,10,10" TextColor="Black"  HorizontalOptions="Start" VerticalOptions="Start"  BackgroundColor="#f6f4f7">
                                     <Button.WidthRequest>
@@ -433,12 +479,47 @@
                                         <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
                                     </Button.BorderRadius>
                                 </Button>
+
+                                <input:CheckBox  Margin="20,20,0,0" Grid.Row="9" Text="Andet" IsChecked="False" Type="Check"/>
+
                             </Grid>
                         </StackLayout>
                     </Frame>
-                    <Frame Style="{StaticResource SurveyFrame}">
-
+                    <Frame Style="{StaticResource SurveyFrame_5}">
+                        <StackLayout>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="20"/>
+                                </Grid.RowDefinitions>
+                                <Label Margin="20,0,0,0" Grid.Row="0" Text="Hvilken behandling?" Style="{StaticResource heading}"/>
+                                <Frame Grid.Row="1" HeightRequest="50" WidthRequest="280" CornerRadius="20"
+                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                    Padding="0" BackgroundColor="White" TranslationY="40">
+                                    <local:RoundedEntry Placeholder="Indtast Behandling" PlaceholderColor="#A8A8A8" 
+                                     Margin="20,0,0,0" TranslationY="2"/>
+                                </Frame>
+                            </Grid>
+                        </StackLayout>
                     </Frame>
+                    <Button Margin="10,10,40,10" TextColor="White"
+                        Text="Gem >" 
+                        HorizontalOptions="EndAndExpand" 
+                        VerticalOptions="StartAndExpand" 
+                        BackgroundColor="#558B2F"
+                        >
+
+                        <Button.WidthRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="150" />
+                        </Button.WidthRequest>
+                        <Button.HeightRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                        </Button.HeightRequest>
+                        <Button.BorderRadius>
+                            <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                        </Button.BorderRadius>
+                    </Button>
                 </StackLayout>
             </ScrollView>
         </Grid>
