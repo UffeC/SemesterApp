@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SemesterApp"
              x:Class="SemesterApp.Views.Træningsdagbog"
-             Title="Træning">
+             Title="Træning"
+             NavigationPage.HasNavigationBar="False"
+                >
     <ContentPage.Content>
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
@@ -17,41 +19,53 @@
                 <Image Source="HeaderBottom22" VerticalOptions="End" Aspect="AspectFill" TranslationY="1"/>
             </StackLayout>
             <ScrollView Margin="0,0,0,0" Grid.Row="1">
-            <StackLayout>
-                <Label 
-                    Text="Træning                        Uge"
-                    FontAttributes="Bold"
-                    FontSize="20"
-                    XAlign="Center"
-                    Margin="10"
-                    >
-                </Label>
-                <Frame Style="{StaticResource DiaryFrame}">
-                        <StackLayout>
-                            <Label
+                <StackLayout>
+                    <Grid Padding="25">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" 
+                       Text="Træning 1" 
+                       FontSize="20" 
+                       TextColor="Black" 
+                       HorizontalTextAlignment="Start"
+                       FontAttributes="Bold"
+                       />
+                        <Label Grid.Row="0" Grid.Column="1"
+                       Text="Uge 1"
+                       FontSize="20" 
+                       TextColor="Black" 
+                       HorizontalTextAlignment="End"
+                       FontAttributes="Bold"
+                       />
+                    </Grid>
+                    <Frame Style="{StaticResource DiaryFrame}">
+
+                        <Label
                            Text="Hvor foregår træningen?"
                            FontAttributes="Bold"
                            FontSize="15"
                            Margin="10"
+                           TextColor="Black"
                            />
-                        </StackLayout>
+
                     </Frame>
-                <Frame Style="{StaticResource DiaryFrame}">
-                    <StackLayout>
-                        <Label
+                    <Frame Style="{StaticResource DiaryFrame}">
+                        <StackLayout>
+                            <Label
                            Text="Dato"
                            FontAttributes="Bold"
                            FontSize="15"
                            />
-                        <DatePicker
+                            <DatePicker
                             HorizontalOptions="Start"
                             FontSize="20"
                            
                             >
-                            
-                        </DatePicker>
-                    </StackLayout>
-                </Frame>
+
+                            </DatePicker>
+                        </StackLayout>
+                    </Frame>
                     <Frame Style="{StaticResource DiaryFrame}">
                         <StackLayout>
                             <Label
@@ -77,30 +91,30 @@
                     </Frame>
                     <Frame Style="{StaticResource DiaryFrame2}">
                         <StackLayout>
-                        <StackLayout>
-                            <Label Text="Har du taget smertestillende før træning?"
+                            <StackLayout>
+                                <Label Text="Har du taget smertestillende før træning?"
                            FontAttributes="Bold"
                            FontSize="15"
                             Margin="10"
                                    />
-                        </StackLayout>
-                        <StackLayout Orientation="Horizontal">
-                            <Button Grid.Row="0"  Margin="10,10,40,10" TextColor="White"
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Button Grid.Row="0"  Margin="10,10,40,10" TextColor="White"
                         Text="Ja" 
                         HorizontalOptions="EndAndExpand" 
                         VerticalOptions="StartAndExpand" 
                         BackgroundColor="#558B2F"
                         >
-                                <Button.WidthRequest>
-                                    <OnIdiom x:TypeArguments="x:Double" Phone="110" />
-                                </Button.WidthRequest>
-                                <Button.HeightRequest>
-                                    <OnIdiom x:TypeArguments="x:Double" Phone="50" />
-                                </Button.HeightRequest>
-                                <Button.BorderRadius>
-                                    <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
-                                </Button.BorderRadius>
-                            </Button>
+                                    <Button.WidthRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="110" />
+                                    </Button.WidthRequest>
+                                    <Button.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                                    </Button.HeightRequest>
+                                    <Button.BorderRadius>
+                                        <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                                    </Button.BorderRadius>
+                                </Button>
 
                                 <Button  Grid.Row="1" Margin="10,10,40,10" TextColor="White"
                         Text="Nej" 
@@ -125,13 +139,44 @@
                             Margin="10"
                                    />
                             <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
-                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
-                                    Padding="0" BackgroundColor="White" TranslationY="40">
+                                   HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+                                   Padding="0" BackgroundColor="White">
                                 <local:RoundedEntry Placeholder="Indtast Medicin" PlaceholderColor="#A8A8A8" 
-                                     Margin="20,0,0,0" TranslationY="2"/>
+                                                        Margin="20,0,0,0"/>
                             </Frame>
+
+                            <Label  Text="Hvilken mængde?"
+                                    FontAttributes="Bold"
+                                    FontSize="15"
+                                    Margin="10"
+                                   />
+                            <Frame HeightRequest="50" WidthRequest="280" CornerRadius="20"
+               HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
+               Padding="0" BackgroundColor="White">
+                                <local:RoundedEntry Placeholder="Indtast mængde i gram" PlaceholderColor="#A8A8A8" 
+                                Margin="20,0,0,0"/>
+                            </Frame>
+
                         </StackLayout>
                     </Frame>
+
+                    <Button Margin="10,10,40,10" TextColor="White"
+                        Text="Videre >" 
+                        HorizontalOptions="EndAndExpand" 
+                        VerticalOptions="StartAndExpand" 
+                        BackgroundColor="#558B2F"
+                        Clicked="Button_Clicked">
+
+                        <Button.WidthRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="150" />
+                        </Button.WidthRequest>
+                        <Button.HeightRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                        </Button.HeightRequest>
+                        <Button.BorderRadius>
+                            <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                        </Button.BorderRadius>
+                    </Button>
                 </StackLayout>
             </ScrollView>
         </Grid>

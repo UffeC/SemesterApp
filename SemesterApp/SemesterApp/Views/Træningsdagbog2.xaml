@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SemesterApp.Views.Træningsdagbog2"
+              NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <BoxView BackgroundColor="#558B2F" Grid.Row="0"/>
+            <BoxView BackgroundColor="#F6F4F7" Grid.Row="1"/>
+            <StackLayout Grid.Row="0" Padding="0,61,0,0">
+                <Label Text="Træningsdagbog" Style="{StaticResource HeaderStyle}"/>
+                <Image Source="HeaderBottom22" VerticalOptions="End" Aspect="AspectFill" TranslationY="1"/>
+            </StackLayout>
+            <ScrollView Margin="0,0,0,0" Grid.Row="1">
+                <StackLayout>
+                    <Grid Padding="25">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" 
+                       Text="Træning 1" 
+                       FontSize="20" 
+                       TextColor="Black" 
+                       HorizontalTextAlignment="Start"
+                       FontAttributes="Bold"
+                       />
+                        <Label Grid.Row="0" Grid.Column="1"
+                       Text="Uge 1"
+                       FontSize="20" 
+                       TextColor="Black" 
+                       HorizontalTextAlignment="End"
+                       FontAttributes="Bold"
+                       />
+                    </Grid>
+
+                    <Label Text="Øvelse 1"
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Frame Style="{StaticResource TrainingFrame_1}">
+                        <StackLayout>
+                            <Label
+                                Text="Set 1"
+                                HorizontalTextAlignment="Center"
+                                FontSize="20"
+                                Margin="0,15,0,0"
+                                TextColor="Black"
+                            />
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="50"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label
+                                    Grid.Row="0"
+                                    Text="Reps"
+                                    HorizontalTextAlignment="Center"
+                                    FontAttributes="Bold"
+                                    FontSize="15"
+                                    Margin="10"
+                                    TextColor="Black"
+                                />
+
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Text="Vægt"
+                                    HorizontalTextAlignment="Center"
+                                    FontAttributes="Bold"
+                                    FontSize="15"
+                                    Margin="10"
+                                    TextColor="Black"
+                                />
+
+                                <Entry 
+                                    Placeholder="1"
+                                    Grid.Row="1"
+                                    Margin="30,0"
+                                />
+
+                                <Entry 
+                                    Placeholder="1"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Margin="30,0"
+                                />
+
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Style="{StaticResource TrainingFrame_1}">
+                        <StackLayout>
+                            <Label
+                                Text="Set 2"
+                                HorizontalTextAlignment="Center"
+                                FontSize="20"
+                                Margin="0,15,0,0"
+                                TextColor="Black"
+                            />
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="50"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label
+                                    Grid.Row="0"
+                                    Text="Reps"
+                                    HorizontalTextAlignment="Center"
+                                    FontAttributes="Bold"
+                                    FontSize="15"
+                                    Margin="10"
+                                    TextColor="Black"
+                                />
+
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Text="Vægt"
+                                    HorizontalTextAlignment="Center"
+                                    FontAttributes="Bold"
+                                    FontSize="15"
+                                    Margin="10"
+                                    TextColor="Black"
+                                />
+
+                                <Entry 
+                                    Placeholder="1"
+                                    Grid.Row="1"
+                                    Margin="30,0"
+                                />
+
+                                <Entry 
+                                    Placeholder="1"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Margin="30,0"
+                                />
+
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Style="{StaticResource TrainingFrame_1}">
+                        <StackLayout>
+                            <Label
+                                Text="Set 3"
+                                HorizontalTextAlignment="Center"
+                                FontSize="20"
+                                Margin="0,15,0,0"
+                                TextColor="Black"
+                            />
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="50"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label
+                                    Grid.Row="0"
+                                    Text="Reps"
+                                    HorizontalTextAlignment="Center"
+                                    FontAttributes="Bold"
+                                    FontSize="15"
+                                    Margin="10"
+                                    TextColor="Black"
+                                />
+
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Text="Vægt"
+                                    HorizontalTextAlignment="Center"
+                                    FontAttributes="Bold"
+                                    FontSize="15"
+                                    Margin="10"
+                                    TextColor="Black"
+                                />
+
+                                <Entry 
+                                    Placeholder="1"
+                                    Grid.Row="1"
+                                    Margin="30,0"
+                                />
+
+                                <Entry 
+                                    Placeholder="1"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Margin="30,0"
+                                />
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Se hvordan øvelsen udføres"
+                           FontAttributes="Bold"
+                           TextColor="#558B2F"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           Margin="30">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="OnTapGestureRecognizerTapped"
+                                NumberOfTapsRequired="1"
+                                />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Button Margin="10,10,40,10" TextColor="White"
+                        Text="Videre >" 
+                        HorizontalOptions="EndAndExpand" 
+                        VerticalOptions="StartAndExpand" 
+                        BackgroundColor="#558B2F"
+                        Clicked="Button_Clicked">
+
+                        <Button.WidthRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="150" />
+                        </Button.WidthRequest>
+                        <Button.HeightRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="50" />
+                        </Button.HeightRequest>
+                        <Button.BorderRadius>
+                            <OnIdiom x:TypeArguments="x:Int32" Phone="30" />
+                        </Button.BorderRadius>
+                    </Button>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

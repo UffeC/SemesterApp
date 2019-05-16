@@ -19,17 +19,17 @@ namespace SemesterApp.Views
 		}
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new ProgramDesc());
+            Navigation.PushAsync(new ProgramDesc());
         }
 
         private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Excercise());
+            Navigation.PushAsync(new Excercise());
         }
 
         private void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new DiaryInfo());
+            Navigation.PushAsync(new DiaryInfo());
         }
     }
 }

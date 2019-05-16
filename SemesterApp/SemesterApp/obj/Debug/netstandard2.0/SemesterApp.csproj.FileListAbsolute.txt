@@ -92,3 +92,55 @@ C:\Users\uffec\vs\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\S
 C:\Users\uffec\vs\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.dll
 C:\Users\uffec\vs\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.pdb
 C:\Users\uffec\vs\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\bin\Debug\netstandard2.0\SemesterApp.deps.json
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\bin\Debug\netstandard2.0\SemesterApp.dll
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\bin\Debug\netstandard2.0\SemesterApp.pdb
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.csprojAssemblyReference.cache
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\AppTabs.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\miscellaneous.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\intro.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Oversigt.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\DiaryInfo.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\Excercise.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\ProgramDesc.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Survey.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træning.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Vejledning.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.csproj.CoreCompileInputs.cache
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.AssemblyInfoInputs.cache
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.AssemblyInfo.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.dll
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.pdb
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog2.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog3.xaml.g.cs
+C:\Users\jespe\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog4.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\bin\Debug\netstandard2.0\SemesterApp.deps.json
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\bin\Debug\netstandard2.0\SemesterApp.dll
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\bin\Debug\netstandard2.0\SemesterApp.pdb
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.csprojAssemblyReference.cache
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\AppTabs.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\miscellaneous.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\intro.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Oversigt.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\DiaryInfo.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\Excercise.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\ProgramDesc.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Survey.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træning.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog2.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog3.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog4.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Vejledning.xaml.g.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.AssemblyInfoInputs.cache
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.AssemblyInfo.cs
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.dll
+C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.pdb

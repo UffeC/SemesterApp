@@ -103,6 +103,26 @@
                 <Setter Property="Padding" Value="10"/>
                 <Setter Property="BackgroundColor" Value="White"/>
             </Style>
+            <Style x:Key="DiaryInfoFrame_2" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="80"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="DiaryFrame3" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="350"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>    
             <!--Dagbogs frame-->
             <Style x:Key="SurveyFrame" TargetType="Frame">
                 <Setter Property="HeightRequest" Value="200"/>
@@ -185,8 +205,19 @@
                 <Setter Property="Padding" Value="10"/>
                 <Setter Property="BackgroundColor" Value="White"/>
             </Style>
-            <Style x:Key="DiaryInfoFrame_2" TargetType="Frame">
-                <Setter Property="HeightRequest" Value="80"/>
+            <!--Træningsdagbog-->
+            <Style x:Key="TrainingFrame_1" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="180"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="TrainingFrame_2" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="130"/>
                 <Setter Property="WidthRequest" Value="300"/>
                 <Setter Property="CornerRadius" Value="20" />
                 <Setter Property="HorizontalOptions" Value="Center" />
