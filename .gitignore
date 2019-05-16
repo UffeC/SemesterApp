@@ -1,0 +1,7 @@
+SemesterApp/SemesterApp.Android/obj/*
+SemesterApp/SemesterApp.Android/bin/*
+SemesterApp/SemesterApp.iOS/obj/*
+SemesterApp/SemesterApp.iOS/bin/*
+SemesterApp/SemesterApp/obj/*
+SemesterApp/SemesterApp/bin/*
+.vs/*
