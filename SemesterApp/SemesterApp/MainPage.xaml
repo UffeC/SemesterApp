@@ -6,6 +6,7 @@
              x:Class="SemesterApp.MainPage"
              BackgroundColor="#558B2F"
              NavigationPage.HasNavigationBar="False"
+             x:Name="Page"
              >
 
     <ContentPage.Resources>
@@ -38,7 +39,7 @@
             <RowDefinition Height="AUTO" />
         </Grid.RowDefinitions>
 
-        <Label Text="Træningsprogram" HorizontalTextAlignment="Center" Margin="0,30,0,0"
+        <Label BindingContext="{x:Reference Name=Page}" Text="{Binding LoginContent.ApplicationName}"  HorizontalTextAlignment="Center" Margin="0,30,0,0"
                Style="{StaticResource WhiteHeader}"/>
 
         <AbsoluteLayout>
@@ -46,13 +47,13 @@
             AbsoluteLayout.LayoutFlags="PositionProportional"/>
         </AbsoluteLayout>
 
-        <Label Text="Log ind" HorizontalTextAlignment="Center" 
+        <Label BindingContext="{x:Reference Name=Page}" Text="{Binding LoginContent.Title}" HorizontalTextAlignment="Center" 
                VerticalTextAlignment="Center" Grid.Row="0" 
                Style="{StaticResource HeaderStyle}"
                TranslationY="-130"
                />
 
-        <Label Text="Log ind med den kode du fik &#10;udleveret i din e-Boks" 
+        <Label BindingContext="{x:Reference Name=Page}" Text="{Binding LoginContent.Instructions}"
                WidthRequest="50" 
                HorizontalTextAlignment="Center" 
                VerticalTextAlignment="Center" 
@@ -64,12 +65,12 @@
         <Frame HeightRequest="50" WidthRequest="300" CornerRadius="20"
                HorizontalOptions="Center" VerticalOptions="Center" Margin="0"
                Padding="0" BackgroundColor="White" TranslationY="40">
-            <local:RoundedEntry Placeholder="Indtast dit brugernavn" PlaceholderColor="#A8A8A8" 
+            <local:RoundedEntry BindingContext="{x:Reference Name=Page}" Placeholder="{Binding LoginContent.CodePlaceholder}" PlaceholderColor="#A8A8A8" 
                                 Margin="20,0,0,0" TranslationY="2" 
                 x:Name="LoginEntry"/>
         </Frame>
 
-        <Button TextColor="White" Text="Log Ind" 
+        <Button TextColor="White" BindingContext="{x:Reference Name=Page}" Text="{Binding LoginContent.LoginButtonText}"
                 HorizontalOptions="Center" 
                 VerticalOptions="Center" 
                 Margin="0" Padding="0" 
@@ -87,7 +88,7 @@
             </Button.BorderRadius>
         </Button>
 
-        <Label Text="Kan du ikke logge ind?" HorizontalTextAlignment="Center" TranslationY="-30"
+        <Label BindingContext="{x:Reference Name=Page}" Text="{Binding LoginContent.LoginHelpText}" HorizontalTextAlignment="Center" TranslationY="-30"
                Style="{StaticResource WhiteHeader}" Grid.Row="5"/>
 
 

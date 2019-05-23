@@ -144,3 +144,28 @@ C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj
 C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.dll
 C:\Users\jonat\Downloads\SemesterApp (1)\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.pdb
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\bin\Debug\netstandard2.0\SemesterApp.deps.json
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\bin\Debug\netstandard2.0\SemesterApp.dll
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\bin\Debug\netstandard2.0\SemesterApp.pdb
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\AppTabs.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\miscellaneous.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\intro.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Oversigt.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\DiaryInfo.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\Excercise.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Subviews\ProgramDesc.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Survey.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træning.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog2.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog3.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Træningsdagbog4.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\Views\Vejledning.xaml.g.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.csproj.CoreCompileInputs.cache
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.AssemblyInfoInputs.cache
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.AssemblyInfo.cs
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.dll
+C:\Users\uch\source\repos\SemesterApp\SemesterApp\SemesterApp\obj\Debug\netstandard2.0\SemesterApp.pdb

@@ -1490,21 +1490,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jonat\\.nuget\\packages\\": {}
+    "C:\\Users\\uch\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jonat\\Downloads\\SemesterApp (1)\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\SemesterApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\uch\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\SemesterApp.iOS.csproj",
       "projectName": "SemesterApp.iOS",
-      "projectPath": "C:\\Users\\jonat\\Downloads\\SemesterApp (1)\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\SemesterApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jonat\\Downloads\\SemesterApp (1)\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\uch\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\SemesterApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\uch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\uch\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\uch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1516,8 +1521,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\jonat\\Downloads\\SemesterApp (1)\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj": {
-              "projectPath": "C:\\Users\\jonat\\Downloads\\SemesterApp (1)\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj"
+            "C:\\Users\\uch\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj": {
+              "projectPath": "C:\\Users\\uch\\source\\repos\\SemesterApp\\SemesterApp\\SemesterApp\\SemesterApp.csproj"
             }
           }
         }

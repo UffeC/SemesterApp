@@ -11,26 +11,34 @@ namespace SemesterApp
 {
     public partial class MainPage : ContentPage
     {
-        public LoginContent loginContent = new LoginContent();
-        readonly LoginManager loginManager = new LoginManager();
-        private AuthorizationManager authorizationManager = new AuthorizationManager();
-        private UserManager userManager = new UserManager();
+        private LoginManager loginManager = new LoginManager();
+        private readonly AuthorizationManager authorizationManager = new AuthorizationManager();
+        private readonly UserManager userManager = new UserManager();
+
+        private LoginContent _loginContent;
+        public LoginContent LoginContent
+        {
+            get
+            {
+                return _loginContent;
+            }
+            set
+            {
+                _loginContent = value;
+                OnPropertyChanged();
+            }
+        }
 
         public MainPage()
         {
             InitializeComponent();
-            BindingContext = loginContent;
         }
 
-        async private void GetAllData()
+        async protected override void OnAppearing()
         {
-            loginContent = await loginManager.GetContent();
-        }
+            LoginContent = await loginManager.GetContent();
 
-        protected override void OnAppearing()
-        {
             base.OnAppearing();
-            GetAllData();
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
